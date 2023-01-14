@@ -552,8 +552,17 @@ a {
     height: 100%;
   }
 
+  .services_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+  }
+
   .section_bottom_box {
-    transform: translateX(50px) translateY(-60px);
+    top: 50px;
     width: 220px;
     height: 100px;
     left: 120px;
@@ -583,11 +592,22 @@ a {
     width: 85%;
   }
 
+  .sponsor_item img {
+    width: 100px;
+  }
+
   .facts_details .section_title,
   .facts_details .section_description {
-    padding: 0 20px;
     text-align: center;
     width: 100%;
+  }
+
+  .section_title {
+    font-size: 32px;
+  }
+
+  .section_description {
+    font-size: 18px;
   }
 
   .facts_details .section_description {
@@ -602,8 +622,24 @@ a {
 
   /* Price Section */
   .price_list {
-    padding: 0 70px;
+    padding: 0 30px;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .price_item ul li {
+    font-size: 12px;
+  }
+
+  .price_item .price {
+    font-size: 32px;
+  }
+  .price_itemTitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .price_item {
+    padding: 30px 10px;
   }
 
   /* Sponsors Section */
