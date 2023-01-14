@@ -23,7 +23,8 @@ a {
 .services_section,
 .facts_section,
 .sponsors_section,
-.footer {
+.footer,
+.pricing {
   max-width: 1440px;
   margin: 0 auto;
   padding: 50px 0;
@@ -351,6 +352,84 @@ a {
   color: #727272;
 }
 
+/*--------------------------
+      Pricing Section
+---------------------------*/
+.pricing .section_title,
+.pricing .section_description {
+  text-align: center;
+}
+.pricing .section_description {
+  font-size: 20px;
+}
+
+.price_list {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: space-around;
+}
+.price_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.price_item:hover {
+  top: -30px;
+}
+
+.price_itemTitle {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.price {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.price_item ul {
+  margin-bottom: 50px;
+}
+
+.price_item ul li {
+  list-style: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.price_item ul li i {
+  color: #ff900e;
+  margin-right: 12px;
+}
+
+.price_button {
+  text-align: center;
+}
+
+.get_started {
+  font-size: 20px;
+  background-color: #ff900e;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
 /*------------------------
     Sponsors Section
 ------------------------*/
@@ -474,7 +553,7 @@ a {
   }
 
   .section_bottom_box {
-    transform: translateX(60px) translateY(-60px);
+    transform: translateX(50px) translateY(-60px);
     width: 220px;
     height: 100px;
     left: 120px;
@@ -519,6 +598,12 @@ a {
     margin-top: 60px;
     flex-wrap: wrap;
     row-gap: 40px;
+  }
+
+  /* Price Section */
+  .price_list {
+    padding: 0 70px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* Sponsors Section */
