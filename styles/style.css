@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans";
+}
+
+a {
+  text-decoration: none;
+}
+
+/*--------------------
+    Header Styles
+--------------------*/
+.header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.hero_section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Navigation Menu Style */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+  color: #131313;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav ul li a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #424242;
+  transition: 0.5s ease;
+}
+
+.nav ul li a:hover {
+  color: #ff900e;
+}
+
+/* Banner Section Style */
+.banner {
+  margin-top: 100px;
+}
+
+.banner_text {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.banner_title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.banner_details {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #727272;
+}
+
+.explore_button {
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+.explore {
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.explore:hover {
+  background: transparent;
+  box-shadow: 0 0 0 1px #ff900e;
+  color: #ff900e;
+}
