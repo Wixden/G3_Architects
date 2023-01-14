@@ -214,6 +214,13 @@ a {
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  position: relative;
+  left: 0;
+  transition: 0.5s ease;
+}
+
+.service:hover {
+  left: -30px;
 }
 
 .service_title {
@@ -249,7 +256,14 @@ a {
   border-radius: 8px;
   width: 342px;
   height: 200px;
+  transition: 0.5s ease;
+  top: 100;
 }
+
+.section_bottom_box:hover {
+  bottom: -40px;
+}
+
 .title {
   font-weight: 700;
   font-size: 65px;
